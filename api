@@ -1,0 +1,13 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import commands,datetime,os,sys,docker,re
+
+def get_containers(): 
+    client = docker.from_env() # 连接实例
+    containers_list = client.containers(all=True) #获取所有容器
+    images_list = client.images() #获取所有镜像
+
+    
+
+def get_images(): #获取镜像信息
